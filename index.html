@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/hs.css">
+        <title>Bem vindo ao Hammerspace</title>
+    </head>
+    <body>
+        <section>
+            <div id="div1" class="container">
+                <div class="container-fluid">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <img id="user" src="img/default-user.png" alt="Fotografia do usuario a ser logado" class="img-circle" width="100px" />
+                        </div>
+                        <div class="form-group">
+                            <input id="login" class="form-control" type="text" placeholder="Login" autofocus /> <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <div class="form-group">
+                            <input id="senha" class="form-control" type="password" placeholder="Password" autofocus /><span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default btn-block">Login </button>
+                            <hr style="border-color: black;"/><label>OR</label>
+                            <button class="btn btn-primary btn-block">Login with Facebook</button>
+                        </div>
+                        <div class="form-group" style="text-align: center;">
+                            <a href="reset_password.html" class="label-link">Forgot your password?</a><br/>
+                            <a href="signing.html" class="label-link"><b>Get help signing in</b></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#login").keyup(function() {
+                    if ($("#login").val() == 50008) {
+                        $("#user").attr("src", "img/pp.jpg");
+                    } else if($("#login").val() == 50023){
+                        $("#user").attr("src", "img/p1.jpg");
+                    } else if($("#login").val() == 50018){
+                        $("#user").attr("src", "img/p2.jpg");
+                    } else if($("#login").val() == 50044){
+                        $("#user").attr("src", "img/p4.jpg");
+                    } else if($("#login").val() == 50050){
+                        $("#user").attr("src", "img/p3.jpg");
+                    } else {
+                        $("#user").attr("src", "img/default-user.png");
+                    } 
+                });
+            });
+        </script>
+    </body>
+</html>

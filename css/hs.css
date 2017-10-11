@@ -1,0 +1,83 @@
+
+form.form-horizontal{
+    display: block;
+    margin: 20px auto;
+}
+
+div#div1 div button.btn-default{
+    background: #8e44ad;
+    color: white;
+    border-radius: 25px;
+}
+
+div#div1 div button.btn-primary, input.form-control{
+    border-radius: 25px;
+}
+
+@media (max-width: 500px) {
+	
+	img#user {
+	    display: block;
+	    margin: 0px auto;
+	}
+	
+	div.form-group {
+		position: relative;
+	}
+	
+	span.glyphicon {
+		position: absolute; 
+		top: 10px; 
+		left: 90%;
+	}
+
+	div#div1{
+		width: 100%;
+	}
+	
+	label {
+		position: absolute; 
+		background: white; 
+		padding: 2px 40px; 
+		top: 45px; 
+		right: 95px;
+	}
+}
+
+	
+@media (min-width: 1200px) {	
+	body {
+		background-image: url(../img/bg.jpg);
+		background-size: 100% 162%;
+	}
+		
+	img#user {
+	    display: block;
+	    margin: 0px auto;
+	}
+	
+	div.form-group {
+		position: relative;
+	}
+	
+	span.glyphicon {
+		position: absolute; 
+		top: 10px; 
+		left: 90%;
+	}
+	
+	label {
+		position: absolute; 
+		background: white; 
+		padding: 2px 40px; 
+		top: 43px;
+		left: 105px;
+	}
+	
+	div#div1{
+		position: relative;
+		top: 100px;
+		left: 400px;
+		width: 25%;
+	}
+}
